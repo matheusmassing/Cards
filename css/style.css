@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;600;700&display=swap");
+
+:root {
+  --background: #071737;
+  --primary: #452f4d;
+  --text_body: #ffffff;
+  --text_answer: #000000;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Raleway", sans-serif;
+  color: var(--text_body);
+  font-size: 1.6rem;
+}
+html {
+  font-size: 62.5%;
+}
+.container_full {
+  display: flex;
+  height: 100vh;
+  font-family: "Lato";
+}
+.container {
+  width: 50%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.especificação {
+  padding: 8rem;
+}
+.especificação h1 {
+  font-size: 6rem;
+}
+
+.especificação h2 {
+  font-size: 3rem;
+}
+
+.especificação p {
+  margin: 3rem 0;
+}
+
+.btn {
+  text-align: center;
+  position: relative;
+  display: block;
+  color: var(--text_body);
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 1rem;
+  border: 0.2rem solid;
+  border-color: var(--primary);
+  border-radius: 0rem 2rem 0rem 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+  cursor: pointer;
+}
+.btn::before {
+  background: var(--primary);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.btn1::before {
+  width: 100%;
+  height: 0%;
+}
+
+.btn1:hover::before {
+  height: 100%;
+}
+
+.card {
+  background: var(--text_body);
+  max-width: 60rem;
+}
+
+.header {
+  background-color: var(--primary);
+  height: 25rem;
+  border: solid 0.2rem;
+}
+
+.question {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.answer {
+  color: var(--text_answer);
+  padding: 3rem 1rem;
+  min-height: 14rem;
+}
+
+.card,
+.header {
+  border-radius: 0rem 4rem 0rem 4rem;
+}
+
+.blur {
+  filter: blur(0.3rem);
+}
